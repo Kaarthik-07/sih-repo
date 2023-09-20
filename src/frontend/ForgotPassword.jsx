@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { toast , ToastContainer} from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
-
 const ForgotPassword = () => {
+
     const Navigate = useNavigate();
     const [email,setEmail] = useState('');
     const handleForgot = (e) =>{
@@ -16,7 +16,7 @@ const ForgotPassword = () => {
     };
   return (
     <>
-    <form className="w-full" onSubmit={(e)=>handleForgot(e)}>
+    <form className="w-full" onSubmit={(e)=>handleForgot(e)} action="" method="POST">
     <div className="bg-gray-100 flex justify-center items-center h-screen">
          <div className="bg-white p-8 rounded-lg shadow-md w-96 flex flex-col items-center">
           <h1 className="text-2xl font-semibold mb-4">Forgot Password</h1>

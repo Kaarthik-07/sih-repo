@@ -1,9 +1,9 @@
 import React from 'react'
 import { Route, Routes, BrowserRouter } from 'react-router-dom'
 import LoginPage from './LoginPage'
-import { ToastContainer,toast } from 'react-toastify'
-import CreateAccount from './createAccount'
-import ForgotPassword from './forgotPAssword';
+import { ToastContainer,toast } from 'react-toastify';
+import CreateAccount from './CreateAccount'
+import ForgotPassword from './ForgotPassword';
 import OtpPage from './OtpCheck'
 import ContactUs from './contactUs'
 
