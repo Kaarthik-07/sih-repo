@@ -18,7 +18,6 @@ const App = () => {
       <Route path='/forgot' element={<ForgotPassword/>}/>
       <Route path='/otp' element={<OtpPage/>}/>
       <Route path='/contact' element={<ContactUs/>}/>
-      hello
     </Routes>
     </BrowserRouter>
     </>
