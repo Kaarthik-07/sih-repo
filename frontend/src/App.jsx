@@ -1,11 +1,11 @@
 import React from 'react'
 import { Route, Routes, BrowserRouter } from 'react-router-dom'
-import LoginPage from '../frontend/LoginPage'
+import LoginPage from './LoginPage'
 import { ToastContainer,toast } from 'react-toastify';
-import CreateAccount from '../frontend/CreateAccount'
-import ForgotPassword from '../frontend/ForgotPassword';
+import CreateAccount from './CreateAccount'
+import ForgotPassword from './ForgotPassword';
 import OtpPage from './OtpCheck'
-import ContactUs from '../frontend/contactUs'
+import ContactUs from './contactUs'
 
 const App = () => {
   return (
@@ -18,6 +18,7 @@ const App = () => {
       <Route path='/forgot' element={<ForgotPassword/>}/>
       <Route path='/otp' element={<OtpPage/>}/>
       <Route path='/contact' element={<ContactUs/>}/>
+      hello
     </Routes>
     </BrowserRouter>
     </>
