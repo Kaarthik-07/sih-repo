@@ -5,7 +5,7 @@ import { ToastContainer,toast } from 'react-toastify';
 import CreateAccount from './CreateAccount'
 import ForgotPassword from './ForgotPassword';
 import OtpPage from './OtpCheck'
-import ContactUs from './contactUs'
+import MainPage from './MainPage';
 
 const App = () => {
   return (
@@ -17,7 +17,7 @@ const App = () => {
       <Route path='/' element={<LoginPage/>}/>
       <Route path='/forgot' element={<ForgotPassword/>}/>
       <Route path='/otp' element={<OtpPage/>}/>
-      <Route path='/contact' element={<ContactUs/>}/>
+      <Route path='/main' element={<MainPage/>}/>
     </Routes>
     </BrowserRouter>
     </>

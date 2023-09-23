@@ -11,7 +11,7 @@ const LoginPage = () => {
     e.preventDefault();
 
     if (username.length ==0){
-    } else{
+    } else{ 
       toast.success("logged successfully")
     }
 
@@ -60,7 +60,7 @@ const LoginPage = () => {
               <a href="" className="text-black hover:underline "onClick={()=> Navigate('/forgot')}>Forgot Password?</a>
             </div>
             <div className="mb-4 w-full">
-              <button type="submit" className="bg-black text-white py-2 px-4 rounded-md w-full hover:bg-green-600"onClick={()=> Navigate('/contact')}>Login</button>
+              <button type="submit" className="bg-black text-white py-2 px-4 rounded-md w-full hover:bg-green-600"onClick={()=> Navigate('/main')}>Login</button>
             </div>
           </form>
           <div className="text-center w-full">
