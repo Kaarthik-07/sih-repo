@@ -36,76 +36,73 @@ const Images = [
   },
 ];
 
-const ChooseCarousel = () => {
-  const [nav1, setNav1] = useState(null);
-  const [nav2, setNav2] = useState(null);
-  const [slider1, setSlider1] = useState(null);
-  const [slider2, setSlider2] = useState(null);
-
+const ChooseCarousel  = ()=>{
+  const [count , setCount] = useState(0);
   useEffect(() => {
-    setNav1(slider1);
-    setNav2(slider2);
-  }, [slider1, slider2]);
+    const images = document.querySelectorAll(".content .img img");
+    images.forEach((image, index) => {
+      if (index === count) {
+        image.classList.remove("hidden");
+      } else {
+        image.classList.add("hidden");
+      }
+    });
+  }, [count]);
+  const prev = (a)=>{
+    if(a == 0){
+      setCount(Images.length-1)
+    }
+    else{
+      setCount(a -1);
+    }
+  }
+  const next = (a)=>{
+    if(a == Images.length-1){
+      setCount(0)
+    }
+    else{
+      setCount(a+1);
+    }
+  }
 
-  const settings = {
-    speed:500,
-    infinite: true,
-    centerPadding: "0",
-    centerMode: true,
-    slidesToShow: 4, // Display 3 images at a time
-    slidesToScroll: 1,
-    lazyLoad: true,
-    asNavFor: nav2,
-    focusOnSelect: true,
-  };
-
-  const thumbnailSettings = {
-    slidesToShow: Images.length, // Display all thumbnails
-    slidesToScroll: 1,
-    asNavFor: nav1,
-    swipeToSlide: true,
-    focusOnSelect: true,
-    centerMode: true,
-    centerPadding: "0",
-  };
-
-  return (
-    <div>
+  return(
+    <>
+    <div className="container">
+      <button className="btn" type="button" onClick={()=>prev(count)}><img src="src/components/left-arrow.png" className="arrowimgleft"/></button>
       <div className="content">
-        <h2 className="header">Car Gallery</h2>
-        <div className="container">
-          <Slider {...settings} ref={(slider) => setSlider1(slider)}>
-            {Images.map((item) => (
-              <div key={item.id}>
+        <div className="img">
+        {Images.map((image, index) => (
+              <div
+                key={image.id}
+                className={`img-container ${index === count ? "active" : ""}`}
+              >
                 <img
-                  src={item.src}
-                  alt={item.alt}
-                  className="img"
-                  width="200"
-                  height="150"
+                  src={image.src}
+                  alt={image.alt}
+                  style={{ width: "250px", height: "375px" }}
                 />
+                
               </div>
             ))}
-          </Slider>
+            
+        </div>
+        <div className="name" style={{display:'flex' , justifyContent:'center' , marginTop:'5px'}}>
+        <span>{Images[count].alt}</span>
         </div>
       </div>
-      <div className="thumbnail-wrapper">
-        <Slider {...thumbnailSettings} ref={(slider) => setSlider2(slider)}>
-          {Images.map((item) => (
-            <div key={item.id}>
-              <img
-                src={item.src}
-                alt={item.alt}
-                className="thumbnail-img"
-                width="50"
-                height="40"
-              />
-            </div>
-          ))}
-        </Slider>
-      </div>
+      <button className="btn" type="button" onClick={()=> next(count)}><img src="src/components/next.png" className="arrowimgright"/></button>
+
+
     </div>
-  );
-};
+    </>
+  )
+
+}
 
 export default ChooseCarousel;
+
+
+/*
+<img src={Images[count].src} style={{width:'250px' , height:'375px' }}/>
+          <span>{Images[count].alt}</span>
+          */
