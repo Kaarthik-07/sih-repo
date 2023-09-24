@@ -3,3 +3,33 @@
 @tailwind utilities;
 
 
+/* Add or modify your existing styles as needed */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 10px;
+  }
+  
+  .thumbnail-wrapper {
+    margin-top: 20px;
+    margin-left: 60px;
+  }
+  
+  .thumbnail-wrapper .slick-track .slick-slide {
+    text-align: center;
+  }
+  
+  .thumbnail-wrapper .slick-track .slick-slide img {
+    max-height: 50px;
+    width: auto;
+    margin: 0 auto;
+    border-radius: 5%;
+    cursor: pointer;
+  }
+  

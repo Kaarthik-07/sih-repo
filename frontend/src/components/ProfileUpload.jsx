@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const ImageUpload = () => {
+const ProfileUpload = () => {
   const [imagePreview, setImagePreview] = useState(
     'https://imgs.search.brave.com/KXXub0Ya9VhGCG-HZMEZQWrv89IHNao1y6w3ZD6JKCk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/cmQuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIxLzA0L0dl/dHR5SW1hZ2VzLTkz/NjE3NjU0Ni5qcGc'
   );
@@ -46,4 +46,4 @@ const ImageUpload = () => {
   );
 };
 
-export default ImageUpload;
+export default ProfileUpload;

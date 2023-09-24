@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import ImageUpload from './ImageUpload';
-
+import ImageUpload from './components/ProfileUpload';
+import ChooseCarousel from './components/ChooseCarousel';
 
 
 
@@ -127,6 +127,8 @@ const MainPage = () => {
         </div>
        
       </div>
+
+      <ChooseCarousel />
 
       
 

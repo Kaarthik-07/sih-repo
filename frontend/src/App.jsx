@@ -3,8 +3,8 @@ import { Route, Routes, BrowserRouter } from 'react-router-dom'
 import LoginPage from './LoginPage'
 import { ToastContainer,toast } from 'react-toastify';
 import CreateAccount from './CreateAccount'
-import ForgotPassword from './ForgotPassword';
-import OtpPage from './OtpCheck'
+import ForgotPassword from './components/ForgotPassword';
+import OtpPage from './components/OtpCheck'
 import MainPage from './MainPage';
 
 const App = () => {
