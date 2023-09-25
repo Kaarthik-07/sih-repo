@@ -4,6 +4,7 @@ import ChooseCarousel from './components/ChooseCarousel';
 
 
 
+
 const MainPage = () => {
   const [isChatOpen, setIsChatOpen] = useState(false);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
@@ -92,48 +93,26 @@ const MainPage = () => {
         </div>
         <ImageUpload />
       </div>
-      
-      
+      <div class="flex justify-center items-center h-screen ">
+  <div class="shadow-xl  w-8/12 rounded-lg text-center p-6">
+  <img src="https://media.tenor.com/or7dYahB5t8AAAAi/pikachu-pokemon.gif" class="p-28 mt absolute top-10 right-60"/>
 
-      <div className="flex justify-center items-center h-screen">
-        <div className="w-[934px] h-[850px] absolute right-[500px]">
-          <div className="w-full h-full relative">
-            <div className="w-[102px] h-[89px] absolute left-[250.5px] top-[197.71px] bg-[#4b21c3]"></div>
-            <div className="w-[102px] h-[89px] absolute left-[999.5px] top-[559.71px] bg-[#4b21c3]"></div>
-            <svg
-              width="833"
-              height="369"
-              viewBox="0 0 833 369"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="absolute left-[292px] top-[214px] w-[833px] h-[369px]"
-              preserveAspectRatio="none"
-            >
-              <path
-                d="M0.5 25.5C0.5 11.6929 11.6929 0.5 25.5 0.5H807.5C821.307 0.5 832.5 11.6929 832.5 25.5V343.5C832.5 357.307 821.307 368.5 807.5 368.5H25.5C11.6929 368.5 0.5 357.307 0.5 343.5V25.5Z"
-                fill="#EEF2F5"
-              ></path>
-            </svg>
-            <p className="absolute left-[675px] top-[231px] text-2xl font-bold text-left text-[#ff6725]">XYZ</p>
-            <p className="absolute left-[604px] top-[281px] text-4xl font-bold text-left text-[#4b21c3]">COMMUNITY</p>
-            <p className="absolute left-[414px] top-[346px] text-base text-left text-black">
-              <span className="text-base text-left text-black">"Empower kids with knowledge! Explore our website to teach children</span>
-              <br />
-              <span className="text-base text-left text-black">their legal rights and promote literacy."</span>
-            </p>
-            <div className="w-[151px] h-[51px] absolute left-[626.5px] top-[429.5px] rounded-[25px] bg-[#ff6725]"></div>
-            <button className="absolute left-[639px] top-[445px] text-base font-bold text-left text-white">START MODULE</button>
-          </div>
-        </div>
-       
-      </div>
+    <div class="text-orange-400 font-bold text-lg">XYZ</div>
 
-      <ChooseCarousel />
+    <div class="text-violet-600 font-bold text-2xl">Community</div>
+    
+    <div class="mt-4 text-gray-700">
+      Empower kids with knowledge! Explore our website to teach children
+      their legal rights and promote literacy.
+    </div>
+    
+    <button class="mt-4 bg-orange-500 rounded-md p-2 text-white">Start Module</button>
+  </div>
+</div>
+<ChooseCarousel />
 
       
-
-
-      
+    
     </>
   );
 };
