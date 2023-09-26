@@ -20,53 +20,40 @@
     -moz-box-shadow: -3px 0px 30px 15px rgba(226, 226, 240, 0.941);
     
   }
-  
+  .content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .content .img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .images{
+    margin: 10px;
+    
+  }
   /* Add these styles to your CSS file */
-  .content .img {
-    position: relative;
-    height: 375px;
-  }
   
-  .content .img img {
-    background: none;
-    border: none;
-    max-width: 100%;
-    max-height: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
+  
+  
+/*
   .content{
     width: 50%;
     padding: 10px;
     /*box-shadow: 0px 1px 5px 11px rgba(94,135,242,0.75);
     -webkit-box-shadow: 0px 1px 5px 11px rgba(94,135,242,0.75);
     -moz-box-shadow: 0px 1px 5px 11px rgba(94,135,242,0.75);
-    */
+    
     box-shadow: -1px 4px 7px 10px rgba(224,212,212,0.75);
 -webkit-box-shadow: -1px 4px 7px 10px rgba(224,212,212,0.75);
 -moz-box-shadow: -1px 4px 7px 10px rgba(224,212,212,0.75);
     overflow-y:hidden;
-  }
-  .arrowimgright{
-    width: 75px;
-  }
-  .arrowimgleft{
-    width: 50px;
-  }
-  .img-container.active{
-    opacity: 1;
-    z-index: 1;
-  }
-  .img-container{
-    
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-  }
+  }*/
+  
+  
+  
   
   
   .thumbnail-wrapper {

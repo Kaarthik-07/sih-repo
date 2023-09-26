@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import Marquee from "react-fast-marquee";
 
 const Images = [
   {
@@ -37,63 +35,33 @@ const Images = [
 ];
 
 const ChooseCarousel  = ()=>{
-  const [count , setCount] = useState(0);
-  useEffect(() => {
-    const images = document.querySelectorAll(".content .img img");
-    images.forEach((image, index) => {
-      if (index === count) {
-        image.classList.remove("hidden");
-      } else {
-        image.classList.add("hidden");
-      }
-    });
-  }, [count]);
-  const prev = (a)=>{
-    if(a == 0){
-      setCount(Images.length-1)
-    }
-    else{
-      setCount(a -1);
-    }
-  }
-  const next = (a)=>{
-    if(a == Images.length-1){
-      setCount(0)
-    }
-    else{
-      setCount(a+1);
-    }
-  }
+  
+  
+  
 
   return(
     <>
-    <div className="container">
-      <button className="btn" type="button" onClick={()=>prev(count)}><img src="src/components/left-arrow.png" className="arrowimgleft"/></button>
+    {/*<div className="container">*/}
+      {/*<button className="btn" type="button" onClick={()=>prev(count)}><img src="src/components/left-arrow.png" className="arrowimgleft"/></button>*/}
+      
       <div className="content">
+        <Marquee>
         <div className="img">
-        {Images.map((image, index) => (
-              <div
-                key={image.id}
-                className={`img-container ${index === count ? "active" : ""}`}
-              >
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  style={{ width: "250px", height: "375px" }}
-                />
-                
-              </div>
-            ))}
+        {Images.map((image , index)=>(
+          <div key={index} className="images">
+            <img src={image.src} style={{ width:'275px' , height:'270px'}}/>
+            </div>
+        ))}
             
         </div>
-        <div className="name" style={{display:'flex' , justifyContent:'center' , marginTop:'5px'}}>
-        <span>{Images[count].alt}</span>
-        </div>
+        </Marquee>
+        
       </div>
-      <button className="btn" type="button" onClick={()=> next(count)}><img src="src/components/next.png" className="arrowimgright"/></button>
+      
+      {/*<button className="btn" type="button" onClick={()=> next(count)}><img src="src/components/next.png" className="arrowimgright"/></button>*/}
 
 
-    </div>
+    {/*</div>*/}
     </>
   )
 
