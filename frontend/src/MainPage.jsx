@@ -84,11 +84,10 @@ const MainPage = () => {
     <a class="text-3xl font-bold text-violet-500" href="/">Child Cronicles</a>
   </div>
   <nav class="flex flex-row items-center justify-center w-4/6 gap-10">
-    <a href="/"><span class="font-extrabold text-accent transition-colors ease-in-out hover:text-accent">HOME</span></a>
-    <a href="/events"><span class="font-extrabold text-black transition-colors ease-in-out hover:text-accent">24/7 help</span></a>
-    <a href="/timeline"><span class="font-extrabold text-black transition-colors ease-in-out hover:text-accent">My Games</span></a>
-    <a href="/socials"><span class="font-extrabold text-black transition-colors ease-in-out hover:text-accent">SOCIALS</span></a>
-    <a href="/team"><span class="font-extrabold text-black transition-colors ease-in-out hover:text-accent">TEAM</span></a>
+    <a href="#"><span class="font-extrabold text-accent transition-colors rsease-in-out hover:text-accent active:text-blue-400">HOME</span></a>
+    <a href="#"><span class="font-extrabold text-black transition-colors ease-in-out hover:text-accent active:text-blue-400">24/7 help</span></a>
+    <a href="#"><span class="font-extrabold text-black transition-colors ease-in-out hover:text-accent active:text-blue-400">My Games</span></a>
+    <a href="#"><span class="font-extrabold text-black transition-colors ease-in-out hover:text-accent  active:text-blue-400">TEAM</span></a>
   </nav>
   <ImageUpload />
 </header>
@@ -192,7 +191,7 @@ const MainPage = () => {
 <p className="mt-[-5rem] text-white font-medium">Site Map</p>
 <p className="mt-[-5rem] text-white font-medium">+91 044 2374 2098</p>
 </div>
-
+    
 
     </>
   );
