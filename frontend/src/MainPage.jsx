@@ -187,7 +187,7 @@ const MainPage = () => {
 <p className="mt-[-5rem] text-white font-medium" >&copy; 2023 All Rights Reserved</p>
 <p className="mt-[-5rem] text-white font-medium">Terms Of Use</p>
 <p className="text-center mt-[-5rem]  text-white font-medium">Safety And Education</p>
-<p className="mt-[-5rem] text-white font-medium">Legal</p>
+<p className="mt-[-5rem] text-white font-medium">Legal Authorities</p>
 <p className="mt-[-5rem] text-white font-medium">Site Map</p>
 <p className="mt-[-5rem] text-white font-medium">+91 044 2374 2098</p>
 </div>
