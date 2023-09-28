@@ -113,39 +113,37 @@ const MainPage = () => {
 
 <div class="flex justify-center items-center min-h-screen">
   <div class="my-16 font-black text-[25px] w-full text-center flex flex-col items-center px-16">
-    <div class="text-lg text-orange-400 mt-8 p-3">About Our Website</div> 
+    <div class="text-lg text-orange-400 mt-10 p-3">About Our Website</div> 
     <div class="flex flex-row items-center justify-center">
       <div class="border-2 shadow-md border-black rounded-md p-2 px-6">Our Mission</div>
     </div>
-    <div class="h-6 w-1 bg-black mt-2"></div>
+    <div class="h-14 w-1 bg-black mt-2"></div>
     <div class="bg-accent mx-12 border-2 p-6 font-black text-3xl text-center bg-violet-400 rounded-lg">
       We're on a mission to make learning about laws and regulations an exciting and engaging experience for kids aged 8-16.
     </div>
     <div class="flex flex-row items-center justify-center">
-      <div class="border-2 shadow-md border-black rounded-md p-2 mt-5 px-6">Why Gamified Learning</div>
+      <div class="border-2 shadow-md border-black rounded-md p-2 mt-10 px-6">Why Gamified Learning</div>
     </div>
-    <div class="h-6 w-1 bg-black mt-2"></div>
+    <div class="h-14 w-1 bg-black mt-5"></div>
     <div class="bg-accent mx-12 border-2 p-6 font-black text-3xl text-center bg-violet-400 rounded-lg">
       Gamification transforms complex legal concepts into fun and interactive games, fostering curiosity, critical thinking, and problem-solving skills in children.
     </div>
     <div class="flex flex-row items-center justify-center">
-      <div class="border-2 shadow-md border-black rounded-md p-2 mt-5 px-6">What Sets Us Apart</div>
+      <div class="border-2 shadow-md border-black rounded-md p-2 mt-10 px-6">What Sets Us Apart</div>
     </div>
-    <div class="h-6 w-1 bg-black mt-2"></div>
+    <div class="h-14 w-1 bg-black mt-2"></div>
     <div class="bg-accent mx-12 border-2 p-6 font-black text-3xl text-center bg-violet-400 rounded-lg">
       Engaging Storylines, Interactive Quizzes, Rewards, and Achievements
     </div>
     <div class="flex flex-row items-center justify-center">
-      <div class="border-2 shadow-md border-black rounded-md p-2 mt-5 px-6">Join Us on the Adventure</div>
+      <div class="border-2 shadow-md border-black rounded-md p-2 mt-10 px-6">Join Us on the Adventure</div>
     </div>
-    <div class="h-6 w-1 bg-black mt-2"></div>
+    <div class="h-14 w-1 bg-black mt-5"></div>
     <div class="bg-accent mx-12 border-2 p-6 font-black text-3xl text-center bg-violet-400 rounded-lg">
       Let's inspire a new generation of informed and responsible citizens together.
     </div>
   </div>
-</div>
-
-
+</div>  
 <div class="flex justify-center items-center h-screen">
   <div class="w-3 h-12 bg-red-400 rounded-full m-1"></div>
   <br />
@@ -154,15 +152,7 @@ const MainPage = () => {
   <div class="text-xl font-bold text-red-500 m-1">XYZ </div>
   <div class="text-sm font-bold text-blue-600">Community</div>
 
-</div>
-
-
-
-      
-
-
-      
-    
+</div>  
     </>
   );
 };

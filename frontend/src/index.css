@@ -64,6 +64,7 @@
     margin-left: 60px;
   }
   
+  
   .thumbnail-wrapper .slick-track .slick-slide {
     text-align: center;
   }
@@ -75,7 +76,8 @@
     border-radius: 5%;
     cursor: pointer;
   }
-  .container{
+  
+.container{
   max-width: 960px;
   height: 500px;
   margin: 0 auto;
@@ -87,8 +89,8 @@
   background: rgb(255, 255, 255);
   border-radius: 17px;
   box-shadow: -3px 0px 30px 15px rgba(230, 230, 244, 0.75);
-  /* -webkit-box-shadow: -3px 0px 30px 15px rgba(224, 224, 237, 0.915);
-  -moz-box-shadow: -3px 0px 30px 15px rgba(226, 226, 240, 0.941); */
+  -webkit-box-shadow: -3px 0px 30px 15px rgba(224, 224, 237, 0.915);
+  -moz-box-shadow: -3px 0px 30px 15px rgba(226, 226, 240, 0.941);
 }
 
 /* Add these styles to your CSS file */
@@ -111,7 +113,10 @@
 .content {
   width: 50%;
   padding: 10px;
-
+  /*box-shadow: 0px 1px 5px 11px rgba(94,135,242,0.75);
+    -webkit-box-shadow: 0px 1px 5px 11px rgba(94,135,242,0.75);
+    -moz-box-shadow: 0px 1px 5px 11px rgba(94,135,242,0.75);
+    */
   box-shadow: -1px 4px 7px 10px rgba(224, 212, 212, 0.75);
   -webkit-box-shadow: -1px 4px 7px 10px rgba(224, 212, 212, 0.75);
   -moz-box-shadow: -1px 4px 7px 10px rgba(224, 212, 212, 0.75);
