@@ -1,49 +1,70 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
-const ProfileUpload = () => {
-  const [imagePreview, setImagePreview] = useState(
-    'https://imgs.search.brave.com/KXXub0Ya9VhGCG-HZMEZQWrv89IHNao1y6w3ZD6JKCk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/cmQuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIxLzA0L0dl/dHR5SW1hZ2VzLTkz/NjE3NjU0Ni5qcGc'
+const ProfileNavbar = () => {
+  const [isEditing, setIsEditing] = useState(false);
+  const [userName, setUserName] = useState('John Doe'); // Initial user name
+  const [userImage, setUserImage] = useState(
+    'https://example.com/default-profile-image.png' // Initial user image URL
   );
+
+  const inputRef = useRef(null);
 
   const handleImageChange = (e) => {
     const file = e.target.files[0];
     if (file) {
       const reader = new FileReader();
       reader.onload = (event) => {
-        setImagePreview(event.target.result);
+        setUserImage(event.target.result);
       };
       reader.readAsDataURL(file);
     }
   };
 
+  const handleSave = () => {
+    // Save user's name and image (you can implement this logic)
+    setIsEditing(false);
+  };
+
+  const toggleEditing = () => {
+    setIsEditing(!isEditing);
+  };
+
   return (
-    <div className="relative ml-24">
-      <div className="avatar-upload">
-        <div className="avatar-edit relative">
-          <input
-            type="file"
-            id="imageUpload"
-            accept=".png, .jpg, .jpeg"
-            onChange={handleImageChange}
-            className="hidden"
-          />
-          <label htmlFor="imageUpload" className="cursor-pointer">
-            <div className="w-12 h-12 bg-white border border-transparent rounded-full shadow-md hover:bg-gray-100 hover:border-gray-300 flex items-center justify-center">
-              {/* Edit Profile */}
-              <i className="fa fa-camera text-gray-700"></i>
-            </div>
-          </label>
-        </div>
-        <div className="avatar-preview w-16 h-16 rounded-full border-4 border-gray-200">
-          <div
-            id="imagePreview"
-            style={{ backgroundImage: `url(${imagePreview})` }}
-            className="w-full h-full rounded-full bg-cover bg-no-repeat bg-center"
-          ></div>
-        </div>
+    <div className="flex items-center">
+      <button className="px-4 py-2 text-sm font-black border-2 border-black bg-accent" onClick={toggleEditing}>
+        PROFILE
+      </button>
+      <div className="ml-4">
+        {isEditing ? (
+          <div>
+            <input
+              type="text"
+              value={userName}
+              onChange={(e) => setUserName(e.target.value)}
+            />
+            <input
+              type="file"
+              accept=".png, .jpg, .jpeg"
+              onChange={handleImageChange}
+              ref={inputRef}
+            />
+            <button onClick={handleSave}>Save</button>
+          </div>
+        ) : (
+          <div onClick={toggleEditing}>
+            <p>{userName}</p>
+            <img
+              src={userImage}
+              alt="Profile"
+              width="50"
+              height="50"
+              onClick={() => inputRef.current.click()}
+            />
+          </div>
+        )}
       </div>
     </div>
   );
 };
 
-export default ProfileUpload;
+export default ProfileNavbar;

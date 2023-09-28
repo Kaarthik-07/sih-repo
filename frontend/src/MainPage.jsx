@@ -79,52 +79,20 @@ const MainPage = () => {
 
   return (
     <>
-      <div className="bg-white-100 p-1/2 flex justify-between items-center shadow-lg">
-        <div className="text-black text-lg font-semibold focus:outline-none">Company Name</div>
-
-        <div className="w-1/3 relative">
-          <div className="flex items-center">
-            <input
-              type="text"
-              placeholder="Search..."
-              className="w-full py-2 px-4 border-2 border-white bg-white text-gray-800 focus:outline-none"
-            />
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-6 h-6 text-gray-600 absolute right-4 cursor-pointer"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M21 21l-4-4m0 0l-4-4m4 4l-4-4m4 4a6 6 0 11-12 0 6 6 0 0112 0z"
-              />
-            </svg>
-          </div>
-        </div>
-
-        <div className="relative mt-4">
-          <button onClick={toggleChat} className="text-black font-semibold">
-            24/7 Help
-          </button>
-          
-          {isChatOpen && (
-            <div className="absolute right-0 mt-8 w-64 bg-white p-4 rounded shadow-lg">
-              <p>AI Chatbot</p>
-              <p>Contact Us Form</p>
-              <button onClick={closeChat} className="text-blue-500 mt-4">
-                Close
-              </button>
-              
-            </div>
-          )}
-          <div className='relative ml-28'>My Games</div>
-        </div>
-        <ImageUpload />
-      </div>
+   <header id="Wheader" class="fixed z-40 flex items-center justify-between w-screen px-4 overflow-hidden text-lg bg-white border-b-2 shadow-md h-header border-bsprime">
+  <div class="w-1/6">
+    <a class="text-3xl font-bold text-violet-500" href="/">Child Cronicles</a>
+  </div>
+  <nav class="flex flex-row items-center justify-center w-4/6 gap-10">
+    <a href="/"><span class="font-extrabold text-accent transition-colors ease-in-out hover:text-accent">HOME</span></a>
+    <a href="/events"><span class="font-extrabold text-black transition-colors ease-in-out hover:text-accent">24/7 help</span></a>
+    <a href="/timeline"><span class="font-extrabold text-black transition-colors ease-in-out hover:text-accent">My Games</span></a>
+    <a href="/socials"><span class="font-extrabold text-black transition-colors ease-in-out hover:text-accent">SOCIALS</span></a>
+    <a href="/team"><span class="font-extrabold text-black transition-colors ease-in-out hover:text-accent">TEAM</span></a>
+  </nav>
+  <ImageUpload />
+</header>
+    
 
       <div class="flex justify-center items-center h-screen ">
   <div class="shadow-xl  w-8/12 rounded-lg text-center md-30 p-20 hiddenn">
