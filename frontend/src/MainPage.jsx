@@ -96,9 +96,9 @@ const MainPage = () => {
       
       <div class="flex justify-center items-center h-screen ">
   <div class="shadow-xl  w-8/12 rounded-lg text-center md-30 p-20">
-    <div class="text-orange-400 font-bold text-lg"><h1>XYZ</h1></div>
+    <div class="text-orange-400 font-bold text-xl"><h1>Right's Quest</h1></div>
 
-    <div class="text-violet-600 font-bold text-2xl"><h1>Community</h1></div>
+    <div class="text-violet-600 font-bold text-lg"><h1>Community</h1></div>
     
     <div class="mt-4 text-gray-700">
       Empower kids with knowledge! Explore our website to teach children
