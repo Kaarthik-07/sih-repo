@@ -28,9 +28,9 @@ const LoginPage = () => {
 
   return (
     <>
-      <div className="bg-gray-100 flex justify-center items-center h-screen">
-        <div className="bg-white p-8 rounded-lg shadow-md w-96 flex flex-col items-center">
-          <h1 className="text-2xl font-semibold mb-4">Login Page</h1>
+        <div className="bg-gray-100 flex justify-center items-center h-screen">
+          <div className="bg-white p-8 rounded-lg shadow-md w-96 flex flex-col items-center">
+            <h1 className="text-2xl font-semibold mb-4">Login Page</h1>
           <form className="w-full" onSubmit={handleLogin}>
             <div className="mb-4 w-full">
               <label htmlFor="username" className="block text-gray-600">Username:</label>
