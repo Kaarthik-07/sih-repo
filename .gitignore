@@ -1,0 +1,24 @@
+# Environment Variables
+.env
+
+# build files
+**/dist/
+
+# package files
+**/node_modules/
+
+# Configs
+.eslintrc
+.prettierrc
+
+
+
+# Logs
+frontend/logs
+frontend/*.log
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+frontend/lerna-debug.log*
+

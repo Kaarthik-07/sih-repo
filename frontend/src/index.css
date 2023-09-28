@@ -2,9 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.wallpaper {
+  background-image: url("/images/wallpaper.jpg");
+}
+
+.wallpaper2 {
+  background-image: url("/images/wallpaper.jpg");
+  /*background-position: center;
+  background-repeat: no-repeat;
+  background-clip: cover;*/
+}
 
 /* Add or modify your existing styles as needed */
 .container {
+<<<<<<< HEAD
     max-width: 960px;
     height: 500px;
     margin: 0 auto;
@@ -73,3 +90,82 @@
     cursor: pointer;
   }
   
+=======
+  max-width: 960px;
+  height: 500px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background: rgb(255, 255, 255);
+  border-radius: 17px;
+  box-shadow: -3px 0px 30px 15px rgba(230, 230, 244, 0.75);
+  -webkit-box-shadow: -3px 0px 30px 15px rgba(224, 224, 237, 0.915);
+  -moz-box-shadow: -3px 0px 30px 15px rgba(226, 226, 240, 0.941);
+}
+
+/* Add these styles to your CSS file */
+.content .img {
+  position: relative;
+  height: 375px;
+}
+
+.content .img img {
+  background: none;
+  border: none;
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content {
+  width: 50%;
+  padding: 10px;
+  /*box-shadow: 0px 1px 5px 11px rgba(94,135,242,0.75);
+    -webkit-box-shadow: 0px 1px 5px 11px rgba(94,135,242,0.75);
+    -moz-box-shadow: 0px 1px 5px 11px rgba(94,135,242,0.75);
+    */
+  box-shadow: -1px 4px 7px 10px rgba(224, 212, 212, 0.75);
+  -webkit-box-shadow: -1px 4px 7px 10px rgba(224, 212, 212, 0.75);
+  -moz-box-shadow: -1px 4px 7px 10px rgba(224, 212, 212, 0.75);
+  overflow-y: hidden;
+}
+.arrowimgright {
+  width: 75px;
+}
+.arrowimgleft {
+  width: 50px;
+}
+.img-container.active {
+  opacity: 1;
+  z-index: 1;
+}
+.img-container {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.thumbnail-wrapper {
+  margin-top: 20px;
+  margin-left: 60px;
+}
+
+.thumbnail-wrapper .slick-track .slick-slide {
+  text-align: center;
+}
+
+.thumbnail-wrapper .slick-track .slick-slide img {
+  max-height: 50px;
+  width: auto;
+  margin: 0 auto;
+  border-radius: 5%;
+  cursor: pointer;
+}
+>>>>>>> 4317b26cf0580ab10366b22189ef3aa647c2b9bc
