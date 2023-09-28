@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState  , useEffect} from 'react';
 import ImageUpload from './components/ProfileUpload';
 import ChooseCarousel from './components/ChooseCarousel';
 
@@ -10,7 +10,39 @@ const MainPage = () => {
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   const [profilePic, setProfilePic] = useState(null);
   const [newProfilePic, setNewProfilePic] = useState(null);
+  useEffect(() => {
+    // Add your IntersectionObserver code here
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        } else {
+          entry.target.classList.remove('show');
+        }
+      });
+    });
 
+    const hiddenElements = document.querySelectorAll('.hiddenn');
+    const hiddenElementsy = document.querySelectorAll('.hiddenny');
+    const hiddenElementsf = document.querySelectorAll('.hiddennf');
+
+    
+    hiddenElements.forEach((el) => observer.observe(el));
+    hiddenElementsy.forEach((el) => observer.observe(el));
+    hiddenElementsf.forEach((el) => observer.observe(el));
+
+    // Don't forget to clean up the observer when the component unmounts
+    return () => {
+      hiddenElements.forEach((el) => observer.unobserve(el));
+      hiddenElementsy.forEach((el) => observer.unobserve(el));
+      hiddenElementsf.forEach((el) => observer.observe(el));
+    };
+  }, []);
+ 
+  
+  
+
+    
   const toggleChat = () => {
     setIsChatOpen(!isChatOpen);
   };
@@ -47,7 +79,7 @@ const MainPage = () => {
 
   return (
     <>
-    <header id="Wheader" class="fixed z-40 flex items-center justify-between w-screen px-4 overflow-hidden text-lg bg-white border-b-2 shadow-md h-header border-bsprime">
+   <header id="Wheader" class="fixed z-40 flex items-center justify-between w-screen px-4 overflow-hidden text-lg bg-white border-b-2 shadow-md h-header border-bsprime">
   <div class="w-1/6">
     <a class="text-3xl font-bold text-violet-500" href="/">Child Cronicles</a>
   </div>
@@ -59,12 +91,10 @@ const MainPage = () => {
   </nav>
   <ImageUpload />
 </header>
+    
 
-      
-        
-      
       <div class="flex justify-center items-center h-screen ">
-  <div class="shadow-xl  w-8/12 rounded-lg text-center md-30 p-20">
+  <div class="shadow-xl  w-8/12 rounded-lg text-center md-30 p-20 hiddenn">
     <div class="text-orange-400 font-bold text-xl"><h1>Right's Quest</h1></div>
 
     <div class="text-violet-600 font-bold text-lg"><h1>Community</h1></div>
@@ -74,42 +104,49 @@ const MainPage = () => {
     </div>
     
     <button class="mt-4 bg-orange-500 rounded-md p-2 text-white">Start Module</button>
-  </div>
-</div>
+   </div>
+    </div>
+      
+      
     <ChooseCarousel />
+  
 
 
 <div class="flex justify-center items-center min-h-screen">
   <div class="my-16 font-black text-[25px] w-full text-center flex flex-col items-center px-16">
     <div class="text-lg text-orange-400 mt-10 p-3">About Our Website</div> 
     <div class="flex flex-row items-center justify-center">
-        <div class="border-2 shadow-md border-black rounded-md p-2 px-6">Our Mission</div>
+        <div class="border-2 shadow-md border-black rounded-md p-2 px-6 hiddennf">Our Mission</div>
       </div>
-      <div class="h-14 w-1 bg-black mt-2"></div>
-      <div class="bg-accent mx-12 border-2 p-6 font-black text-3xl text-center bg-blue-200 rounded-lg">
+      <div class="h-14 w-1 bg-black mt-2 mb-2"></div>
+      <div class="bg-accent mx-12 border-2 p-6 font-black text-3xl text-center bg-blue-200 rounded-lg hiddenny">
         We're on a mission to make learning about laws and regulations an exciting and engaging experience for kids aged 8-16.
       </div>
+      <div class="h-14 w-1 bg-black mt-2 mb-2"></div>
     <div class="flex flex-row items-center justify-center">
-      <div class="border-2 shadow-md border-black rounded-md p-2 mt-10 px-6">Why Gamified Learning</div>
+      <div class="border-2 shadow-md border-black rounded-md p-2 mt-10 px-6 hiddennf">Why Gamified Learning</div>
     </div>
-    <div class="h-14 w-1 bg-black mt-5"></div>
-    <div class="bg-accent mx-12 border-2 p-6 font-black text-3xl text-center bg-blue-200 rounded-lg">
+    <div class="h-14 w-1 bg-black mt-2 mb-2"></div>
+    <div class="bg-accent mx-12 border-2 p-6 font-black text-3xl text-center bg-blue-200 rounded-lg hiddenny">
       Gamification transforms complex legal concepts into fun and interactive games, fostering curiosity, critical thinking, and problem-solving skills in children.
     </div>
+    <div class="h-14 w-1 bg-black mt-2 mb-2"></div>
     <div class="flex flex-row items-center justify-center">
-      <div class="border-2 shadow-md border-black rounded-md p-2 mt-10 px-6">What Sets Us Apart</div>
+      <div class="border-2 shadow-md border-black rounded-md p-2 mt-10 px-6 hiddennf">What Sets Us Apart</div>
     </div>
-    <div class="h-14 w-1 bg-black mt-2"></div>
-    <div class="bg-accent mx-12 border-2 p-6 font-black text-3xl text-center bg-blue-200 rounded-lg">
+    <div class="h-14 w-1 bg-black mt-2 mb-2"></div>
+    <div class="bg-accent mx-12 border-2 p-6 font-black text-3xl text-center bg-blue-200 rounded-lg hiddenny">
       Engaging Storylines, Interactive Quizzes, Rewards, and Achievements
     </div>
+    <div class="h-14 w-1 bg-black mt-2 mb-2"></div>
     <div class="flex flex-row items-center justify-center">
-      <div class="border-2 shadow-md border-black rounded-md p-2 mt-10 px-6">Join Us on the Adventure</div>
+      <div class="border-2 shadow-md border-black rounded-md p-2 mt-10 px-6 hiddennf">Join Us on the Adventure</div>
     </div>
-    <div class="h-14 w-1 bg-black mt-5"></div>
-    <div class="bg-accent mx-12 border-2 p-6 font-black text-3xl text-center bg-blue-200 rounded-lg">
+    <div class="h-14 w-1 bg-black mt-2 mb-2"></div>
+    <div class="bg-accent mx-12 border-2 p-6 font-black text-3xl text-center bg-blue-200 rounded-lg hiddenny">
       Let's inspire a new generation of informed and responsible citizens together.
     </div>
+    
   </div>
 </div>  
 <div class="flex justify-center items-center h-screen mt-[-12rem] ">
@@ -132,7 +169,7 @@ const MainPage = () => {
 </div>
 
 <svg
-  width="2015"
+  width="100%"
   height="278"
   viewBox="0 0 915 178"
   fill="none"
@@ -145,10 +182,11 @@ const MainPage = () => {
     fill-opacity="0.8"
   ></path>
 </svg>
-
-<p className="text-center mt-[-1.5rem] text-white font-medium">Terms of use</p>
-<p className="mt-[-1.5rem] text-white text-xs">2023 All Rights Reserved</p>
-<p className="mt-[-1.5rem] ">Privacy Andd Policy</p>
+<div className='footer' style={{display:'flex' , flexDirection:'row' , justifyContent:'space-evenly' , alignItems:'center'}}>
+<p className="text-center mt-[-5rem]  text-white font-medium">Terms of use</p>
+<p className="mt-[-5rem] text-white font-medium">2023 All Rights Reserved</p>
+<p className="mt-[-5rem] text-white font-medium">Privacy And Policy</p>
+</div>
 
 
     </>
