@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import Marquee from "react-fast-marquee";
 
 const Images = [
@@ -41,8 +41,7 @@ const ChooseCarousel  = ()=>{
 
   return(
     <>
-    {/*<div className="container">*/}
-      {/*<button className="btn" type="button" onClick={()=>prev(count)}><img src="src/components/left-arrow.png" className="arrowimgleft"/></button>*/}
+   
       
       <div className="content">
         <Marquee>
@@ -58,10 +57,7 @@ const ChooseCarousel  = ()=>{
         
       </div>
       
-      {/*<button className="btn" type="button" onClick={()=> next(count)}><img src="src/components/next.png" className="arrowimgright"/></button>*/}
-
-
-    {/*</div>*/}
+      
     </>
   )
 
@@ -70,7 +66,3 @@ const ChooseCarousel  = ()=>{
 export default ChooseCarousel;
 
 
-/*
-<img src={Images[count].src} style={{width:'250px' , height:'375px' }}/>
-          <span>{Images[count].alt}</span>
-          */
