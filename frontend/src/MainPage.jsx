@@ -93,11 +93,40 @@ const MainPage = () => {
         </div>
         <ImageUpload />
       </div>
+      
       <div class="flex justify-center items-center h-screen ">
-  <div class="shadow-xl  w-8/12 rounded-lg text-center p-6">
-  <img src="https://media.tenor.com/or7dYahB5t8AAAAi/pikachu-pokemon.gif" class="p-28 mt absolute top-10 right-60"/>
+  <div class="shadow-xl  w-8/12 rounded-lg text-center md-30 p-20">
+    <div class="text-orange-400 font-bold text-lg"><h1>XYZ</h1></div>
 
-    <div class="text-orange-400 font-bold text-lg">XYZ</div>
+    <div class="text-violet-600 font-bold text-2xl"><h1>Community</h1></div>
+    
+    <div class="mt-4 text-gray-700">
+      Empower kids with knowledge! Explore our website to teach children
+      their legal rights and promote literacy.
+    </div>
+    
+    <button class="mt-4 bg-orange-500 rounded-md p-2 text-white">Start Module</button>
+  </div>
+</div>
+
+     
+       
+      
+
+      <ChooseCarousel />
+
+
+      <div class="flex justify-center items-center h-screen">
+  <div class="w-3 h-12 bg-red-400 rounded-full m-1"></div>
+  <br />
+  <div class="w-2 h-10 bg-orange-300 rounded-full m-q"></div>
+  <div class="w-2 h-8 bg-blue-500 rounded-full m-1 "> </div>
+  <div class="text-xl font-bold text-red-500 m-1">XYZ </div>
+  <div class="text-sm font-bold text-blue-600">Community</div>
+
+</div>
+
+      
 
     <div class="text-violet-600 font-bold text-2xl">Community</div>
     
@@ -107,8 +136,8 @@ const MainPage = () => {
     </div>
     
     <button class="mt-4 bg-orange-500 rounded-md p-2 text-white">Start Module</button>
-  </div>
-</div>
+  {/* </div> */}
+ {/* </div> */}
 <ChooseCarousel />
 
       
@@ -118,3 +147,5 @@ const MainPage = () => {
 };
 
 export default MainPage;
+
+
