@@ -187,7 +187,7 @@ const MainPage = () => {
 <p className="mt-[-5rem] text-white font-medium">2023 All Rights Reserved</p>
 <p className="mt-[-5rem] text-white font-medium">Privacy And Policy</p>
 </div>
-
+    
 
     </>
   );
