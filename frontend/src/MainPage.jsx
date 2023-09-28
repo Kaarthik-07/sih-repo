@@ -79,7 +79,7 @@ const MainPage = () => {
 
   return (
     <>
-   <header id="Wheader" class="fixed z-40 flex items-center justify-between w-screen px-4 overflow-hidden text-lg bg-white border-b-2 shadow-md h-header border-bsprime">
+   <header  class="fixed z-40 flex items-center justify-between w-screen px-4 overflow-hidden text-lg bg-white border-b-2 shadow-md h-header border-bsprime">
   <div class="w-1/6">
     <a class="text-3xl font-bold text-violet-500" href="/">Child Cronicles</a>
   </div>
