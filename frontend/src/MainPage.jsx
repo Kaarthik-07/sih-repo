@@ -138,7 +138,7 @@ const MainPage = () => {
     <div class="bg-accent mx-12 border-2 p-6 font-black text-3xl text-center bg-blue-200 rounded-lg hiddenny">
       Engaging Storylines, Interactive Quizzes, Rewards, and Achievements
     </div>
-    <div class="h-14 w-1 bg-black mt-2 mb-2"></div> ``
+    <div class="h-14 w-1 bg-black mt-2 mb-2"></div> 
     <div class="flex flex-row items-center justify-center">
       <div class="border-2 shadow-md border-black rounded-md p-2 mt-10 px-6 hiddennf">Join Us on the Adventure</div>
     </div>
