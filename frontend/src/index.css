@@ -101,3 +101,6 @@
     border-radius: 5%;
     cursor: pointer;
   }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
