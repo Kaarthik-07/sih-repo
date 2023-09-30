@@ -11,10 +11,10 @@ const NavBar = ()=>{
     <a class="text-3xl font-bold text-violet-500" href="/">Child Cronicles</a>
   </div>
   <nav class="flex flex-row items-center justify-center w-4/6 gap-10">
-    <span class="font-extrabold text-accent transition-colors rsease-in-out hover:text-accent active:text-blue-400" onClick={()=>navigate('/main')}>HOME</span>
-    <span class="font-extrabold text-black transition-colors ease-in-out hover:text-accent active:text-blue-400" onClick={()=> navigate('/help')}>24/7 help</span>
-    <span class="font-extrabold text-black transition-colors ease-in-out hover:text-accent active:text-blue-400" onClick={()=>navigate('/games')}>My Games</span>
-    <span class="font-extrabold text-black transition-colors ease-in-out hover:text-accent  active:text-blue-400">TEAM</span>
+    <span class="font-extrabold text-accent transition-colors rsease-in-out hover:text-accent active:text-blue-400" style={{cursor:'pointer'}} onClick={()=>navigate('/main')}>HOME</span>
+    <span class="font-extrabold text-black transition-colors ease-in-out hover:text-accent active:text-blue-400"  style={{cursor:'pointer'}} onClick={()=> navigate('/help')}>24/7 help</span>
+    <span class="font-extrabold text-black transition-colors ease-in-out hover:text-accent active:text-blue-400" style={{cursor:'pointer'}}  onClick={()=>navigate('/games')}>My Games</span>
+    <span class="font-extrabold text-black transition-colors ease-in-out hover:text-accent  active:text-blue-400" style={{cursor:'pointer'}} onClick={()=>navigate('/team')}>TEAM</span>
   </nav>
   <ProfileNavbar/>
 </header>
