@@ -11,7 +11,6 @@ const MainPage = () => {
   const [profilePic, setProfilePic] = useState(null);
   const [newProfilePic, setNewProfilePic] = useState(null);
   useEffect(() => {
-    // Add your IntersectionObserver code here
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -115,10 +114,10 @@ const MainPage = () => {
 <div class="flex justify-center items-center min-h-screen">
   <div class="my-16 font-black text-[25px] w-full text-center flex flex-col items-center px-16">
     <div class="text-lg text-orange-400 mt-10 p-3">About Our Website</div> 
-    <div class="flex flex-row items-center justify-center">
-        <div class="border-2 shadow-md border-black rounded-md p-2 px-6 hiddennf">Our Mission</div>
-      </div>
-      <div class="h-14 w-1 bg-black mt-2 mb-2"></div>
+      <div class="flex flex-row items-center justify-center">
+          <div class="border-2 shadow-md border-black rounded-md p-2 px-6 hiddennf">Our Mission</div>
+        </div>
+        <div class="h-14 w-1 bg-black mt-2 mb-2"></div>
       <div class="bg-accent mx-12 border-2 p-6 font-black text-3xl text-center bg-blue-200 rounded-lg hiddenny">
         We're on a mission to make learning about laws and regulations an exciting and engaging experience for kids aged 8-16.
       </div>
@@ -163,7 +162,7 @@ const MainPage = () => {
 <h1 class="text-center font-bold mt-[-18rem] text-xl">High level experience in web design and development knowledge, producing quality work.
 </h1>  
 <div class="flex justify-center">
-  <button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 mt-20 px-14 rounded-xl">
+  <button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 mt-20 px-14 rounded-xl"  >
     Contact Us
   </button>
 </div>

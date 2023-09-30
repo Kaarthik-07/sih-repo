@@ -7,6 +7,7 @@ import ForgotPassword from './components/ForgotPassword';
 import OtpPage from './components/OtpCheck'
 import Quiz from './components/Quiz';
 import MainPage from './MainPage';
+import Team from './components/Team';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <Route path='/otp' element={<OtpPage/>}/>
       <Route path='/main' element={<MainPage/>}/>
       <Route path='/quiz' element={<Quiz/>}/>
+      <Route path ='/team' element={<Team/>}/>
     </Routes>
     </BrowserRouter>
     </>

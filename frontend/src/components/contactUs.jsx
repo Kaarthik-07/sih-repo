@@ -15,7 +15,6 @@ const ContactUs = () => {
     <div className="bg-gray-100">
       <div className="flex justify-center items-center min-h-screen">
         <div className="bg-white p-8 shadow-md rounded-md flex">
-        {/* Left Side (Contact Details) */}
         <div className="w-1/3 pr-8">
           <h2 className="text-xl font-semibold mb-4">Contact Us</h2>
           <div className="mb-4">
@@ -24,11 +23,9 @@ const ContactUs = () => {
           </div>
         </div>
 
-        
-        {/* Add space between the left and right sides */}
-        <div className="w-8"></div>
 
-        {/* Right Side (Form) */}
+        
+        <div className="w-8"></div>
         <div className="w-2/3">
           <h2 className="text-xl font-semibold mb-4">Send Us a Message</h2>
           <form>
