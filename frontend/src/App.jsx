@@ -9,6 +9,7 @@ import Quiz from './components/Quiz';
 import MainPage from './MainPage';
 import Team from './components/Team';
 import NotFound from './components/notfound';
+import ContactUs from './components/contactUs';
 const App = () => {
   return (
     <>
@@ -26,6 +27,7 @@ const App = () => {
       <Route path ='/team' element={<Team/>}/>
       <Route path ='/games' element= {<NotFound/>}/>
       <Route path='/help' element = {<NotFound/>}/>
+      <Route path='/contact' element = {<ContactUs/>}/>
     </Routes>
     </BrowserRouter>
     </>
