@@ -8,7 +8,7 @@ import OtpPage from './components/OtpCheck'
 import Quiz from './components/Quiz';
 import MainPage from './MainPage';
 import Team from './components/Team';
-
+import NotFound from './components/notfound';
 const App = () => {
   return (
     <>
@@ -16,12 +16,16 @@ const App = () => {
     <Routes>
       
       <Route path='/create' element={<CreateAccount/>}/>
+      <Route path = '/team/main' element={<MainPage/>}/>
+      <Route path = '/main/team' element={<Team/>}/>
       <Route path='/' element={<LoginPage/>}/>
       <Route path='/forgot' element={<ForgotPassword/>}/>
       <Route path='/otp' element={<OtpPage/>}/>
       <Route path='/main' element={<MainPage/>}/>
       <Route path='/quiz' element={<Quiz/>}/>
       <Route path ='/team' element={<Team/>}/>
+      <Route path ='/games' element= {<NotFound/>}/>
+      <Route path='/help' element = {<NotFound/>}/>
     </Routes>
     </BrowserRouter>
     </>
