@@ -14,7 +14,7 @@ const NavBar = ()=>{
     <span class="font-extrabold text-accent transition-colors rsease-in-out hover:text-accent active:text-blue-400" onClick={()=>navigate('/main')}>HOME</span>
     <span class="font-extrabold text-black transition-colors ease-in-out hover:text-accent active:text-blue-400" onClick={()=> navigate('/help')}>24/7 help</span>
     <span class="font-extrabold text-black transition-colors ease-in-out hover:text-accent active:text-blue-400" onClick={()=>navigate('/games')}>My Games</span>
-    <span class="font-extrabold text-black transition-colors ease-in-out hover:text-accent  active:text-blue-400">TEAM</span>
+    <span class="font-extrabold text-black transition-colors ease-in-out hover:text-accent  active:text-blue-400" onClick={()=>navigate('/team')}>TEAM</span>
   </nav>
   <ProfileNavbar/>
 </header>
