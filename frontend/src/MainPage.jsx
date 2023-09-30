@@ -2,6 +2,7 @@ import React, { useState  , useEffect} from 'react';
 import ImageUpload from './components/ProfileUpload';
 import ChooseCarousel from './components/ChooseCarousel';
 
+import NavBar from './components/Navbar';
 
 
 
@@ -10,6 +11,7 @@ const MainPage = () => {
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   const [profilePic, setProfilePic] = useState(null);
   const [newProfilePic, setNewProfilePic] = useState(null);
+  
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -78,18 +80,7 @@ const MainPage = () => {
 
   return (
     <>
-   <header  class="fixed z-40 flex items-center justify-between w-screen px-4 overflow-hidden text-lg bg-white border-b-2 shadow-md h-header border-bsprime">
-  <div class="w-1/6">
-    <a class="text-3xl font-bold text-violet-500" href="/">Child Cronicles</a>
-  </div>
-  <nav class="flex flex-row items-center justify-center w-4/6 gap-10">
-    <a href="#"><span class="font-extrabold text-accent transition-colors rsease-in-out hover:text-accent active:text-blue-400">HOME</span></a>
-    <a href="#"><span class="font-extrabold text-black transition-colors ease-in-out hover:text-accent active:text-blue-400">24/7 help</span></a>
-    <a href="#"><span class="font-extrabold text-black transition-colors ease-in-out hover:text-accent active:text-blue-400">My Games</span></a>
-    <a href="#"><span class="font-extrabold text-black transition-colors ease-in-out hover:text-accent  active:text-blue-400">TEAM</span></a>
-  </nav>
-  <ImageUpload />
-</header>
+   <NavBar/>
     
 
       <div class="flex justify-center items-center h-screen ">

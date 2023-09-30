@@ -1,21 +1,14 @@
 import React from 'react'
+import NavBar from './Navbar';
+import ProfileNavbar from './ProfileUpload';
+
 
 const Team = () => {
+  
   return (
     
     <>
-      <header  class="fixed z-40 flex items-center justify-between w-screen px-4 overflow-hidden text-lg bg-white border-b-2 shadow-md h-header border-bsprime">
-  <div class="w-1/6">
-    <a class="text-3xl font-bold text-violet-500" href="/">Child Cronicles</a>
-  </div>
-  <nav class="flex flex-row items-center justify-center w-4/6 gap-10">
-    <a href="#"><span class="font-extrabold text-accent transition-colors rsease-in-out hover:text-accent active:text-blue-400">HOME</span></a>
-    <a href="#"><span class="font-extrabold text-black transition-colors ease-in-out hover:text-accent active:text-blue-400">24/7 help</span></a>
-    <a href="#"><span class="font-extrabold text-black transition-colors ease-in-out hover:text-accent active:text-blue-400">My Games</span></a>
-    <a href="#"><span class="font-extrabold text-black transition-colors ease-in-out hover:text-accent  active:text-blue-400">TEAM</span></a>
-  </nav>
-  <ImageUpload />
-</header>
+    <NavBar/>
     <section class="max-w-screen-xl mx-auto py-20 px-8 lg:px-10">
   <h2 class="text-4xl xl:text-5xl capitalize text-center text-indigo-900 font-bold">our team</h2>
   <hr class="mx-auto w-12 h-1 outline-0 border-0 bg-green-300 block mt-4 mb-6"></hr>
