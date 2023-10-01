@@ -131,6 +131,7 @@ const Quiz = () => {
         </div>
       </div>
       </div>
+      <Ratings />
     </body>
     </>
   );
