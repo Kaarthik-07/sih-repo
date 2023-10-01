@@ -83,7 +83,8 @@ const MainPage = () => {
    <NavBar/>
     
 
-      <div class="flex justify-center items-center h-screen ">
+  <div class="flex justify-center items-center h-screen rightquestcontain" >
+    
   <div class="shadow-xl  w-8/12 rounded-lg text-center md-30 p-20 hiddenn">
     <div class="text-orange-400 font-bold text-xl"><h1>Right's Quest</h1></div>
 
@@ -96,6 +97,7 @@ const MainPage = () => {
     <button class="mt-4 bg-orange-500 rounded-md p-2 text-white">Start Module</button>
    </div>
     </div>
+    
       
       
     <ChooseCarousel />
