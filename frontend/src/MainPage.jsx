@@ -82,7 +82,7 @@ const MainPage = () => {
     <>
    <NavBar/>
     
-
+    
   <div class="flex justify-center items-center h-screen rightquestcontain" >
     
   <div class="shadow-xl  w-8/12 rounded-lg text-center md-30 p-20 hiddenn">
@@ -180,7 +180,6 @@ const MainPage = () => {
 <p className="mt-[-5rem] text-white font-medium">Terms Of Use</p>
 <p className="text-center mt-[-5rem]  text-white font-medium">Safety And Education</p>
 <p className="mt-[-5rem] text-white font-medium">Legal Authorities</p>
-<p className="mt-[-5rem] text-white font-medium">Site Map</p>
 <p className="mt-[-5rem] text-white font-medium">+91 044 2374 2098</p>
 </div>
     

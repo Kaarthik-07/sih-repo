@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 
 const ProfileNavbar = () => {
   const [isEditing, setIsEditing] = useState(false);
-  const [userName, setUserName] = useState('John Doe'); // Initial user name
+  const [userName, setUserName] = useState('EX:Your Name'); // Initial user name
   const [userImage, setUserImage] = useState(
     'https://example.com/default-profile-image.png' // Initial user image URL
   );
@@ -34,7 +34,7 @@ const ProfileNavbar = () => {
       <button className="px-4 py-2 text-sm font-black border-2 border-black bg-accent" onClick={toggleEditing}>
         PROFILE
       </button>
-      <div className="ml-4">
+      <div className="ml-4 font-bold">
         {isEditing ? (
           <div>
             <input
