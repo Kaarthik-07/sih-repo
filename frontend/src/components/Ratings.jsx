@@ -123,6 +123,16 @@ const Ratings = () => {
           <p className="rating__display" data-rating="5" hidden>Excellent</p>
         </div>
       </form>
+      <div class="max-w-md mx-auto bg-white rounded shadow-md p-4">
+  <div class="mb-4">
+    <label for="message" class="block text-gray-600 text-sm font-semibold mb-2">Message:</label>
+    <textarea id="message" class="w-full border border-gray-300 rounded-lg py-2 px-3" rows="4"></textarea>
+  </div>
+  <div class="text-center">
+    <button class="bg-black text-white font-semibold py-2 px-4 rounded-full hover:bg-yellow-400 focus:outline-none focus:ring focus:ring-black" type="button">Send Message</button>
+  </div>
+</div>
+
     </>
   )
 }
